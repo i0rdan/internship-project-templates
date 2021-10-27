@@ -70,6 +70,10 @@ color: #181818;
   font-size: 20px;
 }
 
+.info-main__label button:hover {
+  cursor: pointer;
+  color: white;
+}
 
 .info-main__author {
   font-family: Nunito;
@@ -219,6 +223,12 @@ color: #181818;
   background-color: transparent;
 }
 
+.recepies-card-main-reactions__save button:hover {
+  color: #181818;
+  background-color: #FFBC01;
+  cursor: pointer;
+}
+
 .info-main__comments {
   margin-top: 70px;
 }
@@ -254,6 +264,14 @@ color: #181818;
   border-radius: 10px;
   outline: none;
   border: none;
+}
+
+.comments__send-comment button:hover {
+  cursor: pointer;
+}
+
+.comments__send-comment button:hover svg path{
+  fill: black;
 }
 
 .last-comments__comment {
@@ -293,9 +311,21 @@ color: #181818;
 }
 
 @media screen and (min-width: 0px) and (max-width: 841px) {
+  .info-main__label {
+    flex-direction: column;
+  }
+
+  .info-main__label button {
+    margin-top: 10px;
+  }
+  
   .info-main__cookbook-description {
     flex-direction: column;
     text-align: center;
+  }
+
+  .cookbook-description__cookbook-photo img{
+    width: 100%;
   }
 
   .cookbook-description__cookbook-info {
